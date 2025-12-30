@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1093,6 +1093,35 @@
             from { transform: translateY(100vh) rotate(0deg); }
             to { transform: translateY(-100px) rotate(360deg); }
         }
+
+/* FIX: Mobile Hero Section - Bajracharya visibility */
+@media (max-width: 768px) {
+    .hero h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.1;
+    }
+    
+    .hero h1 span {
+        display: block !important;
+        margin-top: 5px;
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 span {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero h1 span {
+        font-size: 1.7rem;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -1146,7 +1175,7 @@
                 </div>
                 <!-- FIXED: Hero text adjusted for mobile -->
                 <h1>Nhyoo <span>Bajracharya</span></h1>
-                <h2 class="hero-tagline">Crafting melodies that transcend borders – in Nepali, Newari, Hindi, and beyond.</h2>
+                <h2 class="hero-tagline">Crafting melodies that transcend borders â€“ in Nepali, Newari, Hindi, and beyond.</h2>
                 <p>Renowned Music Composer, Lyricist & Playback Singer</p>
                 <a href="#discography" class="cta-button">Explore Musical Journey <i class="fas fa-arrow-right"></i></a>
             </div>
@@ -1168,7 +1197,7 @@
                     <p>Nhyoo Bajracharya (born 15 September 1964) is a celebrated Nepali music composer, lyricist, and playback singer known for his versatile contributions to Nepali, Newari, Hindi, and Chinese music industries.</p>
                     
                     <div class="highlight-box">
-                        <p><strong>Alternate Professional Name:</strong> Nhyoo Bajracharya (II) – Actor</p>
+                        <p><strong>Alternate Professional Name:</strong> Nhyoo Bajracharya (II) â€“ Actor</p>
                         <p><strong>Languages:</strong> Nepali, Newari, Hindi, Chinese</p>
                         <p><strong>Genres:</strong> Film Score, Playback Singing, Background Music</p>
                     </div>
@@ -1539,7 +1568,7 @@
                 <div class="footer-about">
                     <div class="footer-logo">Nhyoo<span>Bajracharya</span></div>
                     <p>Official verified website of the celebrated Nepali music composer, lyricist, and playback singer.</p>
-                    <p class="devanagari" style="margin-top:10px;">नेपाली संगीतका लागि समर्पित</p>
+                    <p class="devanagari" style="margin-top:10px;">à¤¨à¥‡à¤ªà¤¾à¤²à¥€ à¤¸à¤‚à¤—à¥€à¤¤à¤•à¤¾ à¤²à¤¾à¤—à¤¿ à¤¸à¤®à¤°à¥à¤ªà¤¿à¤¤</p>
                     
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
