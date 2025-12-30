@@ -875,7 +875,7 @@
             font-size: 0.9rem;
         }
         
-        /* Responsive Design */
+        /* Responsive Design - UPDATED FOR MOBILE NAVIGATION */
         @media (max-width: 1200px) {
             .hero h1 {
                 font-size: 3.5rem;
@@ -914,15 +914,30 @@
         
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem; /* Increased for better mobile visibility */
+                line-height: 1.2;
             }
             
             .hero-tagline {
-                font-size: 1.3rem;
+                font-size: 1.4rem; /* Adjusted for mobile */
             }
             
             .section-title h2 {
                 font-size: 2.5rem;
+            }
+            
+            /* FIXED: Mobile Logo */
+            .logo {
+                font-size: 1.8rem;
+                flex-direction: column;
+                align-items: flex-start;
+                line-height: 1.2;
+            }
+            
+            .logo span {
+                margin-left: 0;
+                margin-top: 2px;
+                font-size: 1.6rem;
             }
             
             nav ul {
@@ -977,11 +992,17 @@
         
         @media (max-width: 576px) {
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem; /* Further adjusted for very small screens */
+                line-height: 1.1;
+            }
+            
+            .hero-tagline {
+                font-size: 1.2rem;
             }
             
             .hero-content {
                 padding: 25px;
+                margin: 0 15px; /* Added margin for better spacing */
             }
             
             .section-title h2 {
@@ -1005,6 +1026,38 @@
             .footer-content {
                 grid-template-columns: 1fr;
                 gap: 30px;
+            }
+            
+            /* FIXED: Very small screens logo */
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .logo span {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 2.2rem; /* Even smaller for tiny screens */
+            }
+            
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+            
+            .cta-button {
+                padding: 12px 25px; /* Smaller button on tiny screens */
+                font-size: 1rem;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
+            }
+            
+            .logo span {
+                font-size: 1.1rem;
             }
         }
         
@@ -1052,9 +1105,12 @@
     <!-- Header & Navigation -->
     <header id="mainHeader">
         <div class="container header-container">
+            <!-- FIXED LOGO: Bajracharya will go underneath Nhyoo on mobile -->
             <div class="logo">
                 <i class="fas fa-music"></i>
-                Nhyoo<span>Bajracharya</span>
+                <div>
+                    Nhyoo<span>Bajracharya</span>
+                </div>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
@@ -1088,6 +1144,7 @@
                     <i class="fas fa-check-circle"></i>
                     <span>Verified Artist</span>
                 </div>
+                <!-- FIXED: Hero text adjusted for mobile -->
                 <h1>Nhyoo <span>Bajracharya</span></h1>
                 <h2 class="hero-tagline">Crafting melodies that transcend borders – in Nepali, Newari, Hindi, and beyond.</h2>
                 <p>Renowned Music Composer, Lyricist & Playback Singer</p>
